@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="300.0" prefWidth="400.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="gui.ViewControle">
+   <children>
+      <Label layoutX="48.0" layoutY="44.0" text="Calculadora básica">
+         <font>
+            <Font name="System Bold" size="36.0" />
+         </font>
+      </Label>
+      <TextField fx:id="txtNum1" layoutX="19.0" layoutY="119.0" promptText="Digite um número" />
+      <TextField fx:id="txtNum2" layoutX="19.0" layoutY="163.0" promptText="Digite um número" />
+      <Label layoutX="19.0" layoutY="221.0" text="Resultado:">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Label>
+      <Label fx:id="lblResultado" layoutX="121.0" layoutY="223.0" prefHeight="17.0" prefWidth="57.0" />
+      <Button fx:id="btnSoma" layoutX="243.0" layoutY="117.0" mnemonicParsing="false" onAction="#onBtnSomaAction" text="Soma">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Button>
+      <Button fx:id="btnSubtrai" layoutX="245.0" layoutY="163.0" mnemonicParsing="false" onAction="#onBtnSubtraiAction" text="Subtração">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Button>
+      <Button fx:id="btnMultiplica" layoutX="245.0" layoutY="209.0" mnemonicParsing="false" onAction="#onBtnMultiplicaAction" text="Multiplicação">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Button>
+      <Button fx:id="btnDivide" layoutX="245.0" layoutY="254.0" mnemonicParsing="false" onAction="#onBtnDivideAction" text="Divisão">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Button>
+   </children>
+</AnchorPane>
